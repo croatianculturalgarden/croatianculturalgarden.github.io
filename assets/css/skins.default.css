@@ -1,0 +1,87 @@
+/* MAIN
+---------- ---------- ---------- ---------- ---------- */
+
+#menu { position: fixed; top: 0px; right: auto; bottom: 0px; left: 0px; height: 100%; min-height: 100%; overflow-x: hidden !important; overflow-y: scroll !important; z-index: 0; }
+#menu.reversemenu { top: 0px; right: 0px; bottom: 0px; left: auto; }
+#menu.menuopen { z-index: 99; }
+#menu.reversemenuopen { z-index: 99; }
+@media screen and (min-width: 960px) { #menu { width: 367px; min-width: 367px; } }
+@media screen and (max-width: 959px) { #menu { width: 293px; min-width: 293px; } }
+@media screen and (max-width: 767px) { #menu { width: 256px; min-width: 256px; } }
+@media screen and (max-width: 479px) { #menu { width: 256px; min-width: 256px; } }
+
+#background { position: fixed; top: 0; right: 0; left: 0; width: 100%; height: 100%; min-height: 100%; overflow: hidden; z-index: -2; }
+
+#wrapper { position: relative; width: 100%; overflow-x: hidden; z-index: 0; }
+@media screen and (min-width: 960px) { #wrapper.menuopen { margin-left: 367px; } }
+@media screen and (max-width: 959px) { #wrapper.menuopen { margin-left: 293px; } }
+@media screen and (max-width: 767px) { #wrapper.menuopen { margin-left: 256px; } }
+@media screen and (max-width: 479px) { #wrapper.menuopen { margin-left: 256px; } }
+@media screen and (min-width: 960px) { #wrapper.reversemenuopen { margin-left: -367px; } }
+@media screen and (max-width: 959px) { #wrapper.reversemenuopen { margin-left: -293px; } }
+@media screen and (max-width: 767px) { #wrapper.reversemenuopen { margin-left: -256px; } }
+@media screen and (max-width: 479px) { #wrapper.reversemenuopen { margin-left: -256px; } }
+
+#navigation { position: static; float: left; width: 100%; }
+@media screen and (min-width: 960px) { #navigation { padding: 16px; } }
+@media screen and (max-width: 959px) { #navigation { padding: 16px; } }
+@media screen and (max-width: 767px) { #navigation { padding: 16px; } }
+@media screen and (max-width: 479px) { #navigation { padding: 16px; } }
+
+#social { position: static; float: left; width: 100%; }
+
+#alerts { position: static; float: left; width: 100%; }
+	#alerts .alert { width: 100%; }
+
+@media screen and (min-width: 960px) {
+	#content { position: static; float: left; width: 100%; }
+		#content #content_t { position: static; float: left; width: 100%; }
+		#content #content_m { position: static; float: left; width: 100%; }
+			#content #content_m #core_m { position: static; float: left; width: 100%; }
+				#content #content_m #core_m > #core_c { position: static; width: 960px; margin: 0px auto; }
+				#content #content_m #core_m > #core_r { position: static; float: right; width: 367px; }
+				#content #content_m #core_m > #core_l { position: static; float: none; width: auto; margin-right: 367px; }
+}
+@media screen and (max-width: 959px) {
+	#content { position: static; float: left; width: 100%; }
+		#content #content_t { position: static; float: left; width: 100%; }
+		#content #content_m { position: static; float: left; width: 100%; }
+			#content #content_m #core_m { position: static; float: left; width: 100%; }
+				#content #content_m #core_m > #core_c { position: static; width: 768px; margin: 0px auto; }
+				#content #content_m #core_m > #core_r { position: static; float: right; width: 293px; }
+				#content #content_m #core_m > #core_l { position: static; float: none; width: auto; margin-right: 367px; }
+}
+@media screen and (max-width: 767px) {
+	#content { position: static; float: left; width: 100%; }
+		#content #content_t { position: static; float: left; width: 100%; }
+		#content #content_m { position: static; float: left; width: 100%; }
+			#content #content_m #core_m { position: static; float: left; width: 100%; }
+				#content #content_m #core_m > #core_c { position: static; width: 480px; margin: 0px auto; }
+				#content #content_m #core_m > #core_r { position: static; float: right; width: 100%; }
+				#content #content_m #core_m > #core_l { position: static; float: right; width: 100%; margin-right: 0px; }
+}
+@media screen and (max-width: 479px) {
+	#content { position: static; float: left; width: 100%; }
+		#content #content_t { position: static; float: left; width: 100%; }
+		#content #content_m { position: static; float: left; width: 100%; }
+			#content #content_m #core_m { position: static; float: left; width: 100%; }
+				#content #content_m #core_m > #core_c { position: static; width: 100%; margin: 0px auto; }
+				#content #content_m #core_m > #core_r { position: static; float: right; width: 100%; }
+				#content #content_m #core_m > #core_l { position: static; float: right; width: 100%; margin-right: 0px; }
+}
+
+#footer { position: static; float: left; width: 100%; }
+
+#subfooter { position: static; float: left; width: 100%; }
+
+
+
+/* ELEMENTS
+---------- ---------- ---------- ---------- ---------- */
+
+#togglemenu { display: block; position: absolute; height: 64px; width: 64px; padding: 8px; cursor: pointer; cursor: hand; z-index: 99; }
+#togglemenu.reversetogglemenu { left: auto; right: 0px; }
+@media screen and (min-width: 960px) { #togglemenu { top: 0px; } }
+@media screen and (max-width: 959px) { #togglemenu { top: 0px; } }
+@media screen and (max-width: 767px) { #togglemenu { top: 0px; } }
+@media screen and (max-width: 479px) { #togglemenu { top: 0px; } }
